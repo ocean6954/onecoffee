@@ -166,7 +166,7 @@ header{
   color: #ABC88B;
   font-size: 28px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 0px;
   opacity:0;
   text-align: center;
   animation-delay: 1s;
@@ -761,6 +761,11 @@ h1{
   line-height: 1.6em;
 
 }
+  
+ .concept p{
+   font-size:24px;
+   line-height:40px;
+  }
 
 .access-wrapper{
   flex-direction: column;
@@ -994,6 +999,7 @@ footer p{
   }
 
   .concept p{
+    font-size:20px;
     line-height: 50px;
   }
 
