@@ -89,14 +89,23 @@ h2{
 }
 /* タグ系ここまで */
 
+
+
 .icon{
   float:right;
-  /* margin-top:10px ; */
 }
 
 .beans{
   margin-right: 10px;
-  }
+}
+
+.three-point{
+  height:25px;
+  text-align: center;
+  margin: 360px 0;
+}
+  
+  
   
 
 /* mainここから */
@@ -127,7 +136,7 @@ header{
   opacity:0;
   width:100%;
   text-align: center;
-  margin: 0 auto;
+  margin:80px auto;
   background-color:#d29f14;
 }
 
@@ -140,7 +149,7 @@ header{
 .concept{
   width: 100%;
   background-image: url(../images/r-yoko.jpeg);
-  height: 500px;
+  height: 800px;
   background-size: cover;
   position: relative;
   opacity:0;
@@ -174,15 +183,11 @@ header{
 
 
 .access-wrapper{
-  /* margin:0 20%; */
-  /* height: 600px; */
   width:100%;
   display: flex;
-  /* animation-name:fadeUpAnime;
-  animation-duration:2s;
-  animation-fill-mode:forwards; */
   opacity: 0;
   display: flex;
+  margin-bottom: 200px;
 }
 
 #map{
@@ -209,9 +214,6 @@ header{
   color: #453232;
   margin: 40px 0px 0px 40px;
   font-size:24px ;
-  /* animation-delay: 2s; */
-  /* opacity:0; */
-
 }
 
 .sut{
@@ -277,6 +279,10 @@ header{
   font-size: 24px;
 }
 
+.res-link-p{
+  display: none;
+}
+
 
 
 .a-v2{
@@ -298,7 +304,7 @@ header{
   
 .menu{
   width: 27%;
-  margin-right: 50px;
+  margin-right: 40px;
 
 }
 
@@ -338,12 +344,6 @@ line-height: 0;
 margin: 0;
 }
 
-.three-point{
-height:25px;
-text-align: center;
-margin: 310px 0 360px 0;
-}
-
 
 
 .bean2{
@@ -367,19 +367,16 @@ animation-delay: 1s;
   animation: vibration .9s infinite;
 }
 
-
-
-
 footer{
   background-color: #453232;
   width: 100%;
-  height:80px;
-  display: flex;
+  height:100px;
+  /* display: flex; */
   margin: 0 auto;
   margin-top: auto;
-  line-height: 80px;
-  /* text-align: center; */
-  position: relative;
+  line-height: 100px;
+  text-align: center;
+  /* position: relative; */
 }
 
 .footer-logo{
@@ -390,10 +387,12 @@ footer{
 footer p {
   color: #d29f14;
   display: inline-block;
-  position: absolute;
-  left: 35%;
+  /* position: absolute; */
+  /* left: 35%; */
 }
-
+footer span{
+  font-size: 20px;
+}
 
 .fl{
   margin: 0 20px 0 0;
@@ -441,6 +440,7 @@ footer p {
   z-index: 11;
   padding: 1.5rem;
   border: 2px solid #aaa;
+  max-width: 1024px;
 }
 .button-close {
   position: absolute;
@@ -536,11 +536,29 @@ footer p {
 
 #right li{
   margin: 10px 0;
+  display: flex;
 }
 
-.five{
-  line-height:55.5px;
+#right span{
+  display: inline-block;
+  margin-left: 0;
 }
+#right p{
+  width: 90%;
+  position: relative;
+}
+.between{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightspan{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 
 .fa-coffee,.fa-cow{
   font-size: 18px;
@@ -549,8 +567,9 @@ footer p {
   margin-right: 0.5rem
 }
 .right-icon{
-  margin-left:1.2rem ;
-  margin-right: 0.5rem
+  margin-left:1.1rem ;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 
@@ -564,12 +583,6 @@ footer p {
   background-color: #453232;
   height:50%;
 }
-
-#right span,#right li:nth-child(4){
-  float: right;
-}
-
-
 
 .res-left{
   z-index: 20;
@@ -590,23 +603,6 @@ footer p {
   padding: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* .modal_open{
-  display: inline-block;
-  margin: 3vw;
-  float: left; 
-  color: #000;
-} */
 
 .modal_box {
   position: fixed;
@@ -669,7 +665,6 @@ footer p {
   line-height: 2.5;
   text-decoration: none;
   margin: 0 10px;
-  /* background: #e6e6e6; */
   
 }
 
@@ -690,12 +685,11 @@ footer p {
   display: none;
 }
 
-
-
-
-
-
 .sp-nav {
+  display: none;
+}
+
+.res-br{
   display: none;
 }
 
@@ -705,6 +699,9 @@ footer p {
 @media screen and (max-width: 769px) {
 
 /*  ウィンドウサイズ769px以下の時のスタイル  */
+.res-br{
+  display: inline;
+}
 .modal_box {
     padding: 10px 2vw 10px;
     background-color: #453232;
@@ -761,11 +758,16 @@ h1{
   line-height: 1.6em;
 
 }
+
+.concept{
+  height: 600px;
+
+}
   
- .concept p{
-   font-size:24px;
-   line-height:40px;
-  }
+.concept p{
+  font-size:20px;
+  line-height:60px;
+}
 
 .access-wrapper{
   flex-direction: column;
@@ -840,17 +842,22 @@ h1{
   margin-left: 5%;
 }
 
-.res-tea-price{
-  float:right;
-}
-
 .tea-lists{
   margin: 0 20px;
   width:90%;
+  position: relative;
 }
+
+
 
 .tea-lists li{
   margin: 10px 0;
+  display: flex;
+}
+
+.tea-lists p{
+  width: 90%;
+  position: relative;
 }
 
 footer p{
@@ -1028,7 +1035,7 @@ footer p{
   
 
   .res-price{
-    font-size: 16px;;
+    font-size: 14px;;
   }
   .coffee-lists{
     width:90%;
@@ -1052,3 +1059,17 @@ footer p{
 
 
 
+@media screen and (max-width:320px){
+  .concept p{
+    font-size: 16px;
+  }
+  .mobileh2{
+    font-size: 16px;
+  }
+  .coffee-lists p{
+    font-size: 11px;
+    /* background-color: #fff; */
+    height: 30px;
+  }
+  
+}
