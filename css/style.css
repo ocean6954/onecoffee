@@ -693,6 +693,9 @@ footer span{
   display: none;
 }
 
+.mobile-br{
+  display: none;
+}
 
 
 
@@ -756,12 +759,19 @@ p{
 h1{
   font-size: 24px;
   line-height: 1.6em;
-
 }
 
 .concept{
   height: 600px;
+}
 
+.access-head{
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.access P{
+  /* margin: 20px 0 0 20px; */
 }
   
 .concept p{
@@ -780,9 +790,7 @@ h1{
   /* position: relative; */
 }
 
-.res-access{
-  width:80%;
-}
+
 
 #map{
   margin-left: 10%;
@@ -866,20 +874,24 @@ footer p{
   left:30%;
 }
 
-footer p{
-  /* font-size: 10px; */
-  line-height: 80px;
-  left:30%;
-}
-
 }
 
 
 @media screen and (max-width:520px) {
 
+  .mobile-br{
+    display: inline;
+  }
+  .concept p{
+    /* text-align: left; */
+  }
+
+
+
   .header-links,.footer-links{
     display: none;
   }
+
 
   .sp-nav {
     z-index: 1;
@@ -1013,17 +1025,17 @@ footer p{
 
   .site-links{
     flex-direction: column;
-    /* text-align: center; */
     height: 900px;
+    /* margin-left: 12%;
+    margin-right: 12%; */
   }
 
   .base-site,.menu,.insta{
-    width: 80%;
-    margin:0 10%;
+    width: 90%;
+    margin:0 5%;
   }
 
   .access{
-    /* margin-right: 0; */
     width:90%;
   }
 
@@ -1063,6 +1075,7 @@ footer p{
   .concept p{
     font-size: 16px;
   }
+
   .mobileh2{
     font-size: 16px;
   }
@@ -1071,5 +1084,7 @@ footer p{
     /* background-color: #fff; */
     height: 30px;
   }
+
+
   
 }
